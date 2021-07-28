@@ -1,21 +1,26 @@
 <head>
   
 </head>
-<body><%= render partial: "shared/gamespot_rss" %></body>
+<body>
+
+
 <div class="container">
-  <div class="row pt-4">
-    <div class="col-lg-6 text-center justify-content-center">
-     
-      <h2>Gamespot</h2>
-      <p><a class="btn btn-secondary" href="/blogposts">View weather reports »</a> </p>
-    </div><!-- /.col-lg-4 -->
-    <div class="col-lg-6 text-center justify-content-center">
-      
-      <h2>Our Forecasts</h2>
-      <p><a class="btn btn-secondary" href="/forecasts">View details »</a></p>
-    </div><!-- /.col-lg-4 -->
+  <div class="row">
+    <div class="col-2">
+      <%= render partial: "shared/metacritic_feed" %>
+    </div>
+    <div class="col-8">
+      Column
+    </div>
+    <div class="col-2">
+      <%= render partial: "shared/gamespot_rss" %>
+    </div>
   </div>
 </div>
+
+
+
+</body>
 
 <footer>
 

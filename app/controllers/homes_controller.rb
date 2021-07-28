@@ -2,10 +2,12 @@ class HomesController < ApplicationController
   before_action :set_home, only: %i[ show edit update destroy ]
   require 'rss_reader/gamespot_rss'
 
+
   # GET /homes or /homes.json
   def index
     @homes = Home.all
     @gamespot_rss = GameNewsRSS.game_news_rss
+
   end
 
   # GET /homes/1 or /homes/1.json
