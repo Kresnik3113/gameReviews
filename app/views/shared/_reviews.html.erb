@@ -1,0 +1,23 @@
+    <% @reviews.each do |review| %>
+
+
+      <div class="row">
+  <div class="col-sm-12">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title"><%= review.title %></h5>
+        <p class="card-text"><%= review.content %></p>
+        <% if user_signed_in? && current_user.admin? %>
+              <td><%= link_to 'Edit', edit_review_path(review) %></td>
+        <td><%= link_to 'Destroy', review, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <% end %>
+        
+        <%= button_to 'Show', review, method: :get %>
+      </div>
+    </div>
+  </div>
+
+</div>
+    <% end %>
+
+    

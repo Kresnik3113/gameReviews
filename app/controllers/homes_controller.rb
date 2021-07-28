@@ -7,6 +7,7 @@ class HomesController < ApplicationController
   def index
     @homes = Home.all
     @gamespot_rss = GameNewsRSS.game_news_rss
+    @reviews = Review.all
 
   end
 
