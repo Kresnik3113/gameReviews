@@ -1,0 +1,15 @@
+<% @gamespot_rss.each do |article| %>
+  <div class="col article-padding p-5 border">
+      <a href="<%= article[:link] %>"><p><strong><%= article[:title] %></strong></p></a>
+          <p style="margin-top:-10px"> 
+              <%= article[:date].strftime("Published: %F") %> 
+              <br>
+              <a target="_blank" href="https://www.gamespot.com/feeds/game-news/">
+              </a>
+          </p>
+      </a>
+      <p>
+          <%= article[:description]%>
+      </p>
+  </div>
+<% end %>
