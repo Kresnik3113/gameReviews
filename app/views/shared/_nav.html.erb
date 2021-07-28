@@ -1,0 +1,55 @@
+
+<!-- Image and text -->
+<nav class="navbar navbar-light bg-light ">
+  <div class="container justify-content-center">
+    <div class="row justify-content-center">
+      <div class="row justify-content-center">
+        <div class="col">
+        </div>
+        <div class="col">
+         
+          <div class="row text-center mt-2">
+            <p class="fs-5">Game reviews</p>
+          </div>
+        </div>
+        <div class="col">
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid text-center">
+  <div class="row pt-3">
+    <div class="col-lg align-self-start">
+    </div>
+    <div class="col-lg align-self-center">
+    </div>
+    <div class="col-lg align-self-center">
+   
+    </div>
+    <div class="col-lg align-self-center">
+    </div>
+    <div class="col-lg align-self-end">
+      <div class="row">
+        <div class="col justify-content-center text-align-center">
+          <% if user_signed_in? %>
+           
+          <% end %>
+        </div>
+        <div class="col">
+        
+          <div>
+            <% if user_signed_in? %>
+              <p>Signed in as... <%=current_user.email %></p>
+              <%=button_to 'Sign out', destroy_user_session_path, :method => :delete%>
+            <% else %>
+              <%=link_to 'Register', new_user_registration_path%> or
+              <%=link_to 'Sign in', new_user_session_path%>
+            <% end %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
