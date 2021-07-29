@@ -1,6 +1,6 @@
 class ReviewsController < ApplicationController
   before_action :set_review, only: %i[ show edit update destroy ]
-  #require 'fullstop'
+  require 'fullstop'
 
   # GET /reviews or /reviews.json
   def index
@@ -27,7 +27,7 @@ class ReviewsController < ApplicationController
   # POST /reviews or /reviews.json
   def create
     @review = Review.new(review_params)
-    #@review.message=Makecap.cap(@review.message) 
+    @review.content =Makecap.cap(@review.content)
     respond_to do |format|
       if @review.save
         format.html { redirect_to @review, notice: "Review was successfully created." }

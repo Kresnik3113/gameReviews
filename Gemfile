@@ -6,7 +6,7 @@ gem 'devise'
 
 gem 'rss', '~> 0.2.9'
 
-gem 'fullstop'
+gem 'fullstop', '~> 0.0.2'
 
 gem 'open-uri', '~> 0.1.0'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'

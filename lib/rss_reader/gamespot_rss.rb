@@ -11,7 +11,6 @@ class GameNewsRSS
             #result.description = result.description.split(';')
             result.description = result.description.gsub(';', '<br/>').html_safe 
 
-           puts result.description
 
             result = { title: result.title, date: result.pubDate, link: result.link, description: result.description }
             
