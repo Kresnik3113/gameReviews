@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
     s.name = 'fullstop'
-    s.version = '0.0.2'
+    s.version = '0.0.1'
     s.date = '2021-07-29'
     s.summary = "Makes the first letter of each sentence uppecase"
     s.description = "A simple gem"
