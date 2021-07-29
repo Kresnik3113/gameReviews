@@ -7,6 +7,6 @@ Gem::Specification.new do |s|
     s.authors = ["DeanK"]
     s.email = 'vastolordeichigo17@gmail.com'
     s.homepage = 'https://github.com/Kresnik3113'
-    s.files = ["fullstop.rb"]
+    s.files = ["lib/fullstop.rb"]
    end
    
