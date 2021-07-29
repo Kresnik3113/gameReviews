@@ -3,11 +3,11 @@
 one:
   id: 1
   username: MyString
-  user_id: 21
+  user_id: 1
 
 two:
   id: 2
   username: MyString
-  user_id: 24
+  user_id: 2
 
   
