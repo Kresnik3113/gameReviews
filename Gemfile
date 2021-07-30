@@ -15,7 +15,7 @@ gem 'rails', '~> 6.1.4'
 group :development, :test do
   gem 'sqlite3'
 end
-gem 'webpacker', '~> 6.0.0.beta.6'
+gem 'webpacker', '~> 5.0'
 # Use Puma as the app server
 gem 'puma', '~> 5.0'
 # Use SCSS for stylesheets
